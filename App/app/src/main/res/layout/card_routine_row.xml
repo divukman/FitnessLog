@@ -1,0 +1,36 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tblRowExercises"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white100"
+    android:gravity="center_horizontal"
+    android:paddingBottom="1dp">
+
+    <TextView
+        android:id="@+id/txtRowExerciseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:text="Exercise"
+        android:layout_column="0"
+        android:layout_span="2"/>
+
+    <TextView
+        android:id="@+id/txtRowNoOfSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="N sets"
+        android:layout_column="1"/>
+
+    <TextView
+        android:id="@+id/txtRowNoOrReps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="right"
+        android:text="N reps"
+        android:layout_column="2" />
+</TableRow>

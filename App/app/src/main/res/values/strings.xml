@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">FitnessLog</string>
+    <string name="routine_info">Workouts in this Routine</string>
+
+    <!-- Font -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+    <string name="number_picker_formatter">%02d</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="workout_name">Workout name</string>
+    <string name="number_of_sets">Number of sets:</string>
+    <string name="number_of_repetitions">Number of repetitions:</string>
+    <string name="exercise">Exercise</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="set">Set</string>
+
+    <string name="no_exercise">No Exercise!</string>
+    <string name="enter_exercise_data">Enter exercise name and exercises!</string>
+    <string name="workout_exists">Workout with this name already exists in this routine!</string>
+
+    <string name="new_session">New Session</string>
+    <string name="last_session">Last Session:</string>
+    <string name="next_session">Next Session:</string>
+    <string name="routine">Routine:</string>
+    <string name="workout">Workout:</string>
+    <string name="tap_to_change">Tap</string>
+    <string name="last_date">Date:</string>
+    <string name="go">Go</string>
+
+    <string name="no_sessions">No Stored Sessions</string>
+    <string name="none">None</string>
+
+    <string name="weight">Weight</string>
+    <string name="session_canceled">Canceled starting a new session!</string>
+    <string name="save_and_finish">Save And Finish</string>
+    <string name="save_session">Save session?</string>
+    <string name="save_session_text">Are you sure you want to finish and save this session?</string>
+    <string name="save">Save</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="session_category">Category:</string>
+    <string name="session_exercise">Exercise:</string>
+    <string name="session_no_sets">Number Of Sets:</string>
+
+    <string name="about_title">Fitness Log</string>
+    <string name="about_text">Fitness Log application aims to be a simple replacement for a pen and paper. \n\n Simply add the exercises, create a workout plan and start a new session. \n\n You can export data to an Excel sheet and sync between multiple devices.\n\n If you like the app, you can donate via PayPal and support developer and SYNC infrastructure.</string>
+    <string name="about_btn_close">Close</string>
+    <string name="about_btn_donate">Donate via PayPal</string>
+    <string name="about_btn_web">Visit FitnessLog Web</string>
+
+
+    <string-array name="groups_temp_array">
+        <item>Chest</item>
+        <item>Cardio</item>
+        <item>Shoulders</item>
+        <item>Abs</item>
+    </string-array>
+
+    <string-array name="items_temp_array">
+        <item>Bench</item>
+        <item>Running</item>
+        <item>Jumping</item>
+        <item>Crunches</item>
+    </string-array>
+</resources>

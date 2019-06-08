@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:text="Set 1"
+        android:textColor="@android:color/black" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <!-- Vertical layout for weight. -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="@string/weight"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/btnPlusWeight"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/buttons_plusminus"
+                android:src="@drawable/ic_add_black_18dp" />
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/oval_dark_green"
+                android:gravity="center"
+                android:text="54"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnMinusWeight"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/buttons_plusminus"
+                android:src="@drawable/ic_remove_black_18dp" />
+        </LinearLayout>
+
+
+        <!-- Vertical layout for reps. -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="@string/reps"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:id="@+id/btnPlusReps"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttons_plusminus"
+                android:src="@drawable/ic_add_black_18dp" />
+
+            <TextView
+                android:id="@+id/txtReps"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+                android:background="@drawable/oval_dark_green"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@android:color/white" />
+
+            <ImageButton
+                android:id="@+id/btnMinusReps"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttons_plusminus"
+                android:src="@drawable/ic_remove_black_18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleDone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/toggle_background"
+        android:textOff=""
+        android:textOn="" />
+</LinearLayout>

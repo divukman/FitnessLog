@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--There is some kind of a bug with having constraint layout within a dialog. I have found that wrapping the
+constraint layout inside the relative layout kind of fixes the problem and gives me exactly what I desired!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/numberPickerReps"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:np_dividerColor="@color/colorPrimary"
+            app:np_formatter="@string/number_picker_formatter"
+            app:np_height="60dp"
+            app:np_max="59"
+            app:np_min="0"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/colorPrimary"
+            app:np_selectedTextSize="@dimen/selected_text_size"
+            app:np_textColor="@color/colorPrimary"
+            app:np_textSize="@dimen/text_size"
+            app:np_typeface="@string/roboto_light"
+            app:np_value="5"
+            app:np_width="180dp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/numberPickerSets"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:np_dividerColor="@color/colorPrimary"
+            app:np_formatter="@string/number_picker_formatter"
+            app:np_height="60dp"
+            app:np_max="59"
+            app:np_min="0"
+            app:np_orientation="horizontal"
+            app:np_selectedTextColor="@color/colorPrimary"
+            app:np_selectedTextSize="@dimen/selected_text_size"
+            app:np_textColor="@color/colorPrimary"
+            app:np_textSize="@dimen/text_size"
+            app:np_typeface="@string/roboto_light"
+            app:np_value="5"
+            app:np_width="180dp" />
+
+        <Spinner
+            android:id="@+id/spinnerItem"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <Spinner
+            android:id="@+id/spinnerGroup"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_of_sets"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/number_of_repetitions"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="19dp"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberPickerReps"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+
+            android:layout_marginTop="8dp"
+
+            android:background="@drawable/background_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floatingActionButtonAdd"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:id="@+id/layoutExercises"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                />
+        </ScrollView>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <EditText
+            android:id="@+id/editTextWorkoutName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/workout_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

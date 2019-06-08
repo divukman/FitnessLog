@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item  android:id="@+id/settings"-->
+        <!--android:title="Settings"/>-->
+    <item  android:id="@+id/sync"
+        android:title="Sync"/>
+    <!--<item  android:id="@+id/restore"-->
+        <!--android:title="Restore"/>-->
+    <item  android:id="@+id/export"
+        android:title="Export Data"/>
+    <item  android:id="@+id/about"
+        android:title="About"/>
+</menu>

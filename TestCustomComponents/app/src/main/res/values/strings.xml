@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestCustomComponents</string>
+
+    <string name="set_widget_mark_complete">Mark done</string>
+    <string name="set_widget_completed">Completed</string>
+    <string name="weight">Weight</string>
+    <string name="reps">Reps</string>
+    <string name="exercise">Exercise</string>
+    <string name="reps_x_weight">Set (reps x weight)</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <!-- Horizontal header holder. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/exercise_widget_header"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Bench Press"
+            android:textColor="@android:color/white"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+    </LinearLayout>
+
+
+    <!-- Scrollable horizontal sets view. -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/setsLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<com.dimitar.testcustomcomponents.widgets.SetWidget-->
+                <!--android:layout_width="105dp"-->
+                <!--android:layout_height="219dp"-->
+                <!--android:layout_marginLeft="12dp" />-->
+            
+            <!--<ToggleButton-->
+                <!--android:layout_width="60dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:textOn=""-->
+                <!--android:textOff=""-->
+                <!--android:background="@drawable/toggle_alldone_on"-->
+                <!--android:src="@drawable/ic_done_all_black_48dp"/>-->
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

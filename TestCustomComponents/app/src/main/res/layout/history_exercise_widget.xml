@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <!-- First row -->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise"/>
+
+        <TextView
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reps_x_weight"/>
+    </LinearLayout>
+
+    <!-- Second row -->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtHistoryExerciseName"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Crunches"/>
+
+        <TableLayout
+            android:background="#00FFFF"
+            android:id="@+id/historySets"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

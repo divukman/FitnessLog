@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/verticalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAddExerciseToSession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_exercise" />
+
+            <Button
+                android:id="@+id/btnSaveAndFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save_and_finish" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

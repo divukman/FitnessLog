@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/session_category"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/spnSessionCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:text="@string/session_exercise"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spnSessionExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <TextView
+        android:text="@string/session_no_sets"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/numberPickerSessionSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:np_dividerColor="@color/colorPrimary"
+        app:np_formatter="@string/number_picker_formatter"
+        app:np_height="60dp"
+        app:np_max="59"
+        app:np_min="0"
+        app:np_orientation="horizontal"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="@dimen/selected_text_size"
+        app:np_textColor="@color/colorPrimary"
+        app:np_textSize="@dimen/text_size"
+        app:np_typeface="@string/roboto_light"
+        app:np_value="5"
+        app:np_width="180dp"
+       />
+
+</LinearLayout>
